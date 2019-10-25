@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./search.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./search.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id='searchBar' placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="search();">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <h1>Khajiit has films if you have coin.</h1>
+            <div class="row">
+                    <div class="col-3"></div>
+                    <div class="input-group m-3 col-5">
+                        <input type="text" id="searchBar" class="form-control" placeholder="Enter film title here...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" onclick="search();">Button</button>
+                        </div>
+                    </div>
+                </div>
+        <div class="row no-gutters" id="output">
+        </div>
+    </div>
+
+    <script src="./scripts/search.js"></script>
+</body>
+
+</html>
